@@ -11,9 +11,9 @@ export const navbarEn: NavbarConfig = [
             text: 'go-dandelion',
             link: 'https://github.com/gly-hub/go-dandelion'
         },
-            {
-                text: 'go-admin-example',
-                link: 'https://github.com/gly-hub/go-admin-example'
-            }],
+        {
+            text: 'go-admin-example',
+            link: 'https://github.com/gly-hub/go-admin-example'
+        }],
     },
 ]

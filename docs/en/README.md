@@ -5,8 +5,11 @@ heroText: GO-Dandelion
 tagline: A golang microservices framework scaffolding tool that integrates rpcx and fasthttp to quickly build project frameworks. It provides the following functions, traffic limiting, link tracing, and service discovery
 actions:
 - text: Get Started →
-  link: /en/guide/about.html
+  link: /guide/started.html
   type: primary
+- text: Introduction
+  link: /guide/about.html
+  type: secondary
 features:
 - title: Continuous integration
   details: Integrate rpcx, httpfast, gorm, redigo, swagger, opentracing, providing log printing, link tracing, current limiting, circuit breaker, service registration, service discovery and other functions
@@ -16,3 +19,8 @@ features:
   details: You can customize plug-ins and business components
 footer: Apache Licensed | Copyright © 2023-present Van Gogh
 ---
+### go go go
+```sh
+go get github.com/gly-hub/go-dandelion/go-dandelion-cli@latest
+go install github.com/gly-hub/go-dandelion/go-dandelion-cli@latest
+```

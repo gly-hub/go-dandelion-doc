@@ -5,8 +5,11 @@ heroText: GO-Dandelion
 tagline: 一个集成rpcx、fasthttp的golang微服务框架脚手架工具，可快速构建项目框架。包含限流、链路追踪、服务发现等功能。
 actions:
 - text: 快速上手 →
-  link: /guide/about.html
+  link: /guide/started.html
   type: primary
+- text: 项目简介
+  link: /guide/about.html
+  type: secondary
 features:
 - title: 持续集成
   details: 集成rpcx、httpfast、gorm、redigo、swagger、opentracing，提供日志打印、链路追踪、限流、熔断、服务注册、服务发现等功能
@@ -16,3 +19,8 @@ features:
   details: 可自定义插件、业务组件
 footer: Apache Licensed | Copyright © 2023-present 梵高哦
 ---
+### 冲冲冲
+```sh
+go get github.com/gly-hub/go-dandelion/go-dandelion-cli@latest
+go install github.com/gly-hub/go-dandelion/go-dandelion-cli@latest
+```
