@@ -1,6 +1,7 @@
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from '@vuepress/cli'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 import {
     head,
     navbarEn,
@@ -118,5 +119,6 @@ export default defineUserConfig({
                 },
             },
         }),
+        googleAnalyticsPlugin({id: 'G-6CFNFNRG2X'})
     ]
 })
