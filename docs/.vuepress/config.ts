@@ -29,7 +29,7 @@ export default defineUserConfig({
     },
     theme: defaultTheme({
         // logo: '/images/hero.png',
-        repo: 'gly-hub/go-dandelion',
+        repo: 'gly-hub/go-dandelion-doc',
         docsDir: 'docs',
 
         locales: {
@@ -39,7 +39,9 @@ export default defineUserConfig({
                 selectLanguageText: '选择语言',
                 selectLanguageAriaLabel: '选择语言',
                 sidebar: sidebarZh,
-                editLink: false,
+                editLinkText: '在 GitHub 上编辑此页',
+                lastUpdatedText: '上次更新',
+                contributorsText: '贡献者',
                 // custom containers
                 tip: '提示',
                 warning: '注意',
@@ -59,7 +61,7 @@ export default defineUserConfig({
             },
             '/en/': {
                 navbar: navbarEn,
-                editLink: false,
+                editLinkText: 'Edit this page on GitHub',
                 sidebar: sidebarEn,
             },
         },
