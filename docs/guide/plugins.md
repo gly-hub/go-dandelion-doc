@@ -1,6 +1,6 @@
 ---
-title: 插件
+title: plugins
 ---
 
 
-# 插件
+# plugins

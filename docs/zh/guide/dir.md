@@ -1,10 +1,11 @@
 ---
-title: Directory Structure
+title: 目录结构
 ---
 
-# Directory Structure
-## RPC service
-``` shell
+
+# 目录结构
+## rpc服务
+``` shell 
 .
 ├── boot
 │   └── boot.go              //需要初始化的方法在该处注册
@@ -29,8 +30,15 @@ title: Directory Structure
 │
 └── main.go                  //入口文件
 ```
++ `boot`: 对应的初始化方法在`boot`目录下实现。在`boot/boot.go`中提供注册方法。
++ `cmd`: `cobra`命令注册，目前提供`api`服务启动入口。
++ `config`: 配置文件夹，配置文件为`yaml`格式，需要严格按照`yaml`格式书写，否则会报错。初始化创建时提供本地环境配置文件`config/configs_local.yaml`。
++ `global`: 全局变量，用于自定义全局变量。
++ `internal`: 业务代码实现目录。`internal/dao`为数据库操作，`internal/logic`为业务逻辑，`internal/model`为数据模型，`internal/service`为服务接口。
++ `static`: 存放静态文件。
++ `tools`: 工具类。自定义的工具类需要在该目录下。
 
-## HTTP service
+## http服务
 ``` shell
 .
 ├── cmd
@@ -46,6 +54,10 @@ title: Directory Structure
 │   └── service              //服务
 ├── static
 │   └── http-server.txt       //服务名
-│
+│ 
 └── main.go                  //入口文件
 ```
++ `cmd`: `cobra`命令注册，目前提供`api`服务启动入口。
++ `config`: 配置文件夹，配置文件为`yaml`格式，需要严格按照`yaml`格式书写，否则会报错。初始化创建时提供本地环境配置文件`config/configs_local.yaml`。
++ `internal`: 业务代码实现目录。`internal/middleware`用于存放自定义中间件，`internal/route`用于路由管理，`internal/service`用于服务接口实现，rpc调用。
++ `static`: 存放静态文件。

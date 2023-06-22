@@ -11,6 +11,7 @@ import {
 } from './configs/index.js'
 
 export default defineUserConfig({
+
     // set site base to default value
     base: '/',
     head,
@@ -18,23 +19,28 @@ export default defineUserConfig({
     // site-level locales config
     locales: {
         '/': {
-            lang: 'chinese',
+            lang: 'english', // 将会被设置为 <html> 的 lang 属性
             title: 'go-dandelion',
             description: '一个golang脚手架工具'
         },
-        '/en/': {
-            lang: 'english', // 将会被设置为 <html> 的 lang 属性
+        '/zh/': {
+            lang: 'chinese',
             title: 'go-dandelion',
             description: '一个golang脚手架工具'
         },
     },
     theme: defaultTheme({
-        // logo: '/images/hero.png',
+        logo: '/images/logo.png',
         repo: 'gly-hub/go-dandelion-doc',
         docsDir: 'docs',
 
         locales: {
             '/': {
+                navbar: navbarEn,
+                editLinkText: 'Edit this page on GitHub',
+                sidebar: sidebarEn,
+            },
+            '/zh/': {
                 navbar: navbarZh,
                 selectLanguageName: '简体中文',
                 selectLanguageText: '选择语言',
@@ -60,23 +66,59 @@ export default defineUserConfig({
                 toggleColorMode: '切换颜色模式',
                 toggleSidebar: '切换侧边栏',
             },
-            '/en/': {
-                navbar: navbarEn,
-                editLinkText: 'Edit this page on GitHub',
-                sidebar: sidebarEn,
-            },
         },
     }),
     plugins: [
         docsearchPlugin({
-            appId: '34YFD9IUQ2',
-            apiKey: '9a9058b8655746634e01071411c366b8',
-            indexName: 'vuepress',
-            searchParameters: {
-                facetFilters: ['tags:v2'],
-            },
+            appId: '7M47ME7WW2',
+            apiKey: '1e1d77f2fed85aa64e81c54677348621',
+            indexName: 'gly-hubio',
+            // searchParameters: {
+            //     facetFilters: ['tags:v1'],
+            // },
             locales: {
                 '/': {
+                    placeholder: 'Search Documentation',
+                    translations: {
+                        button: {
+                            buttonText: 'Search Documentation',
+                            buttonAriaLabel: 'Search Documentation',
+                        },
+                        modal: {
+                            searchBox: {
+                                resetButtonTitle: 'Clear query',
+                                resetButtonAriaLabel: 'Clear query',
+                                cancelButtonText: 'Cancel',
+                                cancelButtonAriaLabel: 'Cancel',
+                            },
+                            startScreen: {
+                                recentSearchesTitle: 'Recent Searches',
+                                noRecentSearchesText: 'No recent searches',
+                                saveRecentSearchButtonTitle: 'Save to recent searches',
+                                removeRecentSearchButtonTitle: 'Remove from recent searches',
+                                favoriteSearchesTitle: 'Favorites',
+                                removeFavoriteSearchButtonTitle: 'Remove from favorites',
+                            },
+                            errorScreen: {
+                                titleText: 'Unable to fetch results',
+                                helpText: 'You may need to check your network connection',
+                            },
+                            footer: {
+                                selectText: 'Select a language',
+                                navigateText: 'Navigate to result',
+                                closeText: 'Close search',
+                                searchByText: 'Search by text',
+                            },
+                            noResultsScreen: {
+                                noResultsText: 'No results found',
+                                suggestedQueryText: 'Did you mean {suggestedQuery}?',
+                                reportMissingResultsText: 'the query should yield results？',
+                                reportMissingResultsLinkText: 'Report missing results',
+                            },
+                        },
+                    },
+                },
+                '/zh/': {
                     placeholder: '搜索文档',
                     translations: {
                         button: {

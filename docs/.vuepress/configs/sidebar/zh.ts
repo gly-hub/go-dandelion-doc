@@ -1,27 +1,31 @@
 import type { SidebarConfig } from '@vuepress/theme-default'
 
 export const sidebarZh: SidebarConfig = {
-    '/guide/': [
+    '/zh/guide/': [
         {
             text: '指南',
             children: [
-                '/guide/about.md',
-                '/guide/started.md',
-                '/guide/baseconfig.md',
-                '/guide/dir.md',
+                '/zh/guide/about.md',
+                '/zh/guide/started.md',
+                '/zh/guide/baseconfig.md',
+                '/zh/guide/dir.md',
             ],
         },
         {
             text: '进阶',
             children: [
-                '/guide/plugins.md',
+                '/zh/guide/upgrade/rpc.md',
+                '/zh/guide/upgrade/http.md',
+                '/zh/guide/upgrade/database.md',
+                '/zh/guide/upgrade/other.md',
+                '/zh/zh/guide/upgrade/plugins.md',
             ],
         },
         {
             text: '其他',
             children: [
-                '/guide/joinus.md',
-                '/guide/callme.md',
+                '/zh/guide/joinus.md',
+                '/zh/guide/callme.md',
             ],
         },
     ],

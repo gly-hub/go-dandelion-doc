@@ -1,6 +1,6 @@
 ---
-title: 联系我们
+title: Contact us
 ---
 
 
-# 联系我们
+# Contact us

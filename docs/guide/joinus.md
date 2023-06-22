@@ -1,6 +1,5 @@
 ---
-title: 加入我们
+title: Join us
 ---
 
-
-# 加入我们
+# Join us

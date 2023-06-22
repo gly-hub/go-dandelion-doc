@@ -1,13 +1,13 @@
 ---
-title: Basic configuration
+title: 基础配置
 ---
-# Basic configuration
+# 基础配置
 
-::: warning look out
-The configuration file is in YAML format and must be strictly written according to the YAML syntax, otherwise an error will occur.
+::: warning 注意
+配置文件为yaml格式，需要严格按照yaml格式书写，否则会报错。
 :::
 
-## 1.RPC
+## 1.rpc配置
 ::: tip 服务发现
 目前只支持etcd
 :::
@@ -29,7 +29,7 @@ rpcServer:
 + `port`: rpc服务端口
 + `pprof`: rpc服务pprof端口
 
-## 2.HTTP
+## 2.http配置
 ```yaml
 httpServer:
   port: 8080
@@ -43,9 +43,9 @@ rpcServer:
 ```
 + `port`: http服务端口
 + `pprof`: http服务pprof端口
-## 3.Database
-::: tip supported
-Currently, only MySQL is supported.
+## 3.数据库配置
+::: tip 数据库类型
+目前只支持mysql
 :::
 ```yaml
 db:
@@ -78,9 +78,9 @@ db:
 + `slowThreshold`: 慢日志阈值
 + `master`: 主库配置
 + `slave`: 从库配置
-## 4.Redis
-::: tip redis model
-Currently, there are three deployment modes available: standalone (alone), sentinel, and cluster.
+## 4.redis配置
+::: tip redis模式
+目前支持单机（alone）, 哨兵（sentinel）, 集群（cluster）
 :::
 ```yaml
 redis:
@@ -105,16 +105,9 @@ redis:
 + `readTimeout`: 读超时时间
 + `writeTimeout`: 写超时时间
 + `idleTimeout`: 空闲超时时间
-## 5.Logger
-::: tip level
-0-Emergency
-1-Alert
-2-Critical
-3-Error
-4-Warning
-5-Notice
-6-Informational
-7-Debug
+## 5.日志配置
+::: tip 日志等级
+0紧急的 1警报 2重要的 3错误 4警告 5提示 6信息 7调试
 :::
 ```yaml
 logger:
@@ -131,9 +124,9 @@ logger:
 + `fileLevel`: 文件日志级别
 + `multiFileWrite`: 是否写入多个文件
 + `multiFileLevel`: 多文件日志级别
-## 6.Trace
-::: tip look out
-This configuration will only affect the reporting of traces and will not affect the normal logging tags.
+## 6.链路追踪配置
+::: tip 注意
+该配置只会影响链路上报，不会影响正常的日志标记
 :::
 ```yaml
 tracer:

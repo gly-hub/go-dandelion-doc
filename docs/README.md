@@ -1,25 +1,25 @@
 ---
 home: true
-heroImage: null
+heroImage: /images/logo.png
 heroText: GO-Dandelion
-tagline: 一个集成rpcx、fasthttp的golang微服务框架脚手架工具，可快速构建项目框架。包含限流、链路追踪、服务发现等功能。
+tagline: A Golang microservice framework scaffolding tool that integrates rpcx and fasthttp, allowing for rapid construction of project frameworks. It includes features such as rate limiting, distributed tracing, and service discovery.
 actions:
-- text: 快速上手 →
+- text: Get Started →
   link: /guide/started.html
   type: primary
-- text: 项目简介
+- text: Introduction
   link: /guide/about.html
   type: secondary
 features:
-- title: 持续集成
-  details: 集成rpcx、httpfast、gorm、redigo、swagger、opentracing，提供日志打印、链路追踪、限流、熔断、服务注册、服务发现等功能
-- title: 快速开发
-  details: 以更快的速度搭建项目结构目录，初始化各组件，更快的实现业务开发。
-- title: 可扩展
-  details: 可自定义插件、业务组件
-footer: Apache Licensed | Copyright © 2023-present 梵高哦
+- title: Continuous Integration (CI)
+  details: An integration of rpcx, httpfast, gorm, redigo, swagger, and opentracing, providing functionality such as logging, distributed tracing, rate limiting, circuit breaking, service registration, and service discovery.
+- title: Rapid development
+  details: Build the project structure directory faster, initialize the components, and realize the business development faster
+- title: Highly scalable
+  details: You can customize plug-ins and business components.
+footer: Apache Licensed | Copyright © 2023-present Van Gogh
 ---
-### 冲冲冲
+### go go go
 ```sh
 go get github.com/gly-hub/go-dandelion/go-dandelion-cli@latest
 go install github.com/gly-hub/go-dandelion/go-dandelion-cli@latest
