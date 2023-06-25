@@ -18,7 +18,7 @@ export const sidebarZh: SidebarConfig = {
                 '/zh/guide/upgrade/http.md',
                 '/zh/guide/upgrade/database.md',
                 '/zh/guide/upgrade/other.md',
-                '/zh/zh/guide/upgrade/plugins.md',
+                '/zh/guide/upgrade/plugins.md',
             ],
         },
         {

@@ -14,7 +14,11 @@ export const sidebarEn: SidebarConfig = {
         {
             text: 'upgrade',
             children: [
-                '/guide/plugins.md',
+                '/guide/upgrade/rpc.md',
+                '/guide/upgrade/http.md',
+                '/guide/upgrade/database.md',
+                '/guide/upgrade/other.md',
+                '/guide/upgrade/plugins.md',
             ],
         },
         {

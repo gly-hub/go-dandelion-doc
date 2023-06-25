@@ -77,7 +77,7 @@ and functionalities for developing microservice projects.
 In the future, we plan to continue iterating on this project and introduce the following functionalities:
 
 + Refactor and enhance support for rpcx: We will address the current limitations and improve the
-extensibility and readability of rpcx integration. (TODO)
+extensibility and readability of rpcx integration. (DONE [Look](https://github.com/gly-hub/go-dandelion/tree/refactor_20230625_rpcserver))
 
 + Optimize the HTTP engine and enable multiple engine applications: We are currently working on 
 optimizing the HTTP engine and enabling the use of multiple engines for enhanced flexibility and
