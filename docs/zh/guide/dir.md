@@ -2,7 +2,6 @@
 title: 目录结构
 ---
 
-
 # 目录结构
 ## rpc服务
 ``` shell 
@@ -37,6 +36,11 @@ title: 目录结构
 + `internal`: 业务代码实现目录。`internal/dao`为数据库操作，`internal/logic`为业务逻辑，`internal/model`为数据模型，`internal/service`为服务接口。
 + `static`: 存放静态文件。
 + `tools`: 工具类。自定义的工具类需要在该目录下。
+
+::: tip 根据项目合理使用DDD分层架构
+`internal`层下的目录结构可以自定义，但是需要保证每个目录下的文件都是同一类型的文件，例如`internal/dao`下的文件都是数据库操作文件，
+`internal/logic`下的文件都是业务逻辑文件。
+:::
 
 ## http服务
 ``` shell

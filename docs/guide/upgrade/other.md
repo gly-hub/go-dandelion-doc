@@ -1,6 +1,7 @@
 ---
-title: 其他组件
+title: Other Components
 ---
 
+## 1. Logging Component
 
-# 其他组件
+## 2. Error Extension Component

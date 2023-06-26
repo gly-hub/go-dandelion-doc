@@ -87,7 +87,6 @@ Currently supports standalone (alone), sentinel, and cluster modes.
 ```yaml
 redis:
   redisType: "alone"
-  network: "127.0.0.1:6379"
   startAddr: ["127.0.0.1:6379"]
   active: 100
   idle: 100
@@ -98,7 +97,6 @@ redis:
   idleTimeout: "100ms"
 ```
 + `redisType`: Redis type
-+ `network`: Standalone address
 + `startAddr`: Sentinel or cluster addresses
 + `active`: Maximum active connections
 + `idle`: Maximum idle connections

@@ -5,10 +5,10 @@ heroText: GO-Dandelion
 tagline: 一个集成rpcx、fasthttp的golang微服务框架脚手架工具，可快速构建项目框架。包含限流、链路追踪、服务发现等功能。
 actions:
 - text: 快速上手 →
-  link: /guide/started.html
+  link: /zh/guide/started.html
   type: primary
 - text: 项目简介
-  link: /guide/about.html
+  link: /zh/guide/about.html
   type: secondary
 features:
 - title: 持续集成
