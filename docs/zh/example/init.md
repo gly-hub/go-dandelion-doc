@@ -11,6 +11,10 @@ title: 项目初始化
 ::: tip go-dandelion
 version = v1.2.0
 :::
+```shell
+go get github.com/gly-hub/go-dandelion/go-dandelion-cli@latest
+go install github.com/gly-hub/go-dandelion/go-dandelion-cli@latest
+```
 
 ## 2.项目基础目录初始化
 ```shell
@@ -52,7 +56,20 @@ mkdir common
 mkdir common/model
 mkdir common/service
 ```
++ `common/model`:用于存放rpc通信协议
++ `common/service`:用于存放服务名以及方法名等常量
 
+在`common/model`目录下创建`lib`文件夹（用于存放基础模型），创建`common/model/lib/common.go`文件,并
+定义基础模型。
+```go
+package lib
+
+// Response rpc同行使用，http响应不会使用
+type Response struct {
+	Code int32  `json:"-"`
+	Msg  string `json:"-"`
+}
+```
 ### 2.4 整体目录结构
 ``` shell 
 go-admin-example

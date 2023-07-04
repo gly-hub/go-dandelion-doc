@@ -36,6 +36,13 @@ export const sidebarZh: SidebarConfig = {
                 '/zh/example/about.md',
                 '/zh/example/init.md',
             ],
+        },
+        {
+            text: '开始',
+            children: [
+                '/zh/example/login.md',
+                '/zh/example/auth.md',
+            ],
         }
     ]
 }
