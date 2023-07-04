@@ -6,6 +6,10 @@ export const navbarZh: NavbarConfig = [
         link: '/zh/guide/about.md',
     },
     {
+        text: '示例',
+        link: '/zh/example/init.md',
+    },
+    {
         text: '项目',
         children: [{
             text: 'go-dandelion',
