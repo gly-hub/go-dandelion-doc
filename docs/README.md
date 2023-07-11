@@ -17,7 +17,8 @@ features:
   details: Build the project structure directory faster, initialize the components, and realize the business development faster
 - title: Highly scalable
   details: You can customize plug-ins and business components.
-footer: Apache Licensed | Copyright © 2023-present Van Gogh
+footerHtml: true
+footer: Apache Licensed | Copyright © 2023-present <a href="https://github.com/gly-hub">Van Gogh</a>
 ---
 ### go go go
 ```sh

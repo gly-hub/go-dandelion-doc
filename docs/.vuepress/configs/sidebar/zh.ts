@@ -40,8 +40,23 @@ export const sidebarZh: SidebarConfig = {
         {
             text: '开始',
             children: [
-                '/zh/example/login.md',
-                '/zh/example/auth.md',
+                {
+                    text: '登录模块',
+                    collapsible: true,
+                    children: [
+                        '/zh/example/login/demand.md',
+                        '/zh/example/login/login.md',
+                        '/zh/example/login/captcha.md',
+                        '/zh/example/login/perfect.md',
+                    ]
+                },
+                {
+                    text: '权限校验',
+                    collapsible: true,
+                    children: [
+                        '/zh/example/auth.md',
+                    ]
+                },
             ],
         }
     ]

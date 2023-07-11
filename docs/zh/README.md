@@ -17,7 +17,8 @@ features:
   details: 以更快的速度搭建项目结构目录，初始化各组件，更快的实现业务开发。
 - title: 可扩展
   details: 可自定义插件、业务组件
-footer: Apache Licensed | Copyright © 2023-present 梵高哦
+footerHtml: true
+footer: Apache Licensed | Copyright © 2023-present <a href="https://github.com/gly-hub">梵高哦</a>
 ---
 ### 冲冲冲
 ```sh
